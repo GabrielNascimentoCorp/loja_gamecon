@@ -1,0 +1,241 @@
+@media screen and (max-width: 432px) {
+   
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+    
+    .container-index {
+        display: block;
+    }
+
+    #section-index {
+        font-size: 48px; /* Define a média de 48px */
+    }
+    
+    .index-title h1,
+    .index-title h2 {
+        margin: 0; /* Remove margens padrão para evitar espaçamento extra */
+    }
+    
+    .index-title h1 {
+        font-size: 1.5em; /* Ajuste o tamanho do h1 */
+    }
+    
+    .index-title h2 {
+        font-size: 1em; /* Ajuste o tamanho do h2 */
+    }
+
+    img {
+        position: relative;
+        width: 100%;
+    }
+    
+    .container-wrapper .wrapper {
+        width: 480px; /* Define a largura para 480px */
+        height: 40vh; /* Mantém a altura como estava */
+        margin: 5rem auto; /* Centraliza o container */
+        box-shadow: 10px 10px 20px black; /* Sombra */
+        overflow: hidden; /* Esconde conteúdo que ultrapassa os limites */
+    }
+    
+    .container-wrapper .wrapper-holder {
+        display: grid;
+        grid-template-columns: repeat(4, 100%); /* Mantém o layout em 4 colunas */
+        height: 100%; /* Mantém a altura como estava */
+        width: 100%; /* Largura total do wrapper */
+        animation: slider 12s ease-in-out infinite alternate; /* Animação */
+    }
+    
+    .container-wrapper #slider-img-1 {
+        background-image: url(./images/lewlara_image.png); /* Imagem 1 */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Não repete a imagem */
+        background-size: cover; /* Cobre todo o espaço */
+    }
+    
+    .container-wrapper #slider-img-2 {
+        background-image: url(./images/wk_image.png); /* Imagem 2 */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Não repete a imagem */
+        background-size: cover; /* Cobre todo o espaço */
+    }
+
+    .logo a h1 {
+        font-size: 24px;
+    }
+    
+    .container-lewlara,
+    .container-wk {
+        display: block;
+    }
+
+    .container-lewlara,
+    .container-wk {
+        margin: 10px 10px 9px;
+    }
+
+    .contact-methods {  
+        display: block;
+        margin-left: 30px;
+    }
+
+    form {
+        margin-bottom: 80px;
+    }
+
+    .social-links {
+        margin-bottom: 80px;
+    }
+
+    .social-links a img {  
+        width: 60px;
+        height: 60px;
+    }
+
+    #contact {
+        height: 150vh;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    } 
+
+    .container-wrapper .wrapper {
+        width: 768px; /* Define a largura para 480px */
+        height: 40vh; /* Mantém a altura como estava */
+        margin: 5rem auto; /* Centraliza o container */
+        box-shadow: 10px 10px 20px black; /* Sombra */
+        overflow: hidden; /* Esconde conteúdo que ultrapassa os limites */
+    }
+}
+    
+
+@media (max-width: 1700px) {
+    
+    #section-index {
+        height: 100vh; /* Ajusta a altura para caber o conteúdo */
+        padding: 20px; /* Adiciona algum preenchimento */
+    }
+
+    .index-title h1 {
+        font-size: px; /* Ajusta o tamanho da fonte */
+        margin-bottom: 20px; /* Ajusta a margem inferior */
+    }
+
+    .index-title h2 {
+        font-size: 28px; /* Ajusta o tamanho da fonte */
+    }
+
+    #biography {
+        height: auto; /* Ajusta a altura para caber o conteúdo */
+        padding: 20px; /* Adiciona algum preenchimento */
+    }
+
+    #biography .container h2 {
+        font-size: 40px; /* Ajusta o tamanho da fonte */
+        margin-bottom: 40px; /* Ajusta a margem inferior */
+    }
+
+    #biography .container p {
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
+
+    #lewlara-section {
+        height: 100vh;
+    }
+
+    #wiedenkennedy-section {
+        height: 100vh;
+    }
+}
