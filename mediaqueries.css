@@ -1,11 +1,6 @@
 /* Pequenas telas (celulares) */
 @media screen and (max-width: 768px) {
 
-    *{
-        overflow: hidden;
-    }
-
-
     /* Header */
     .nav-bar {
       flex-direction: column;
@@ -99,6 +94,7 @@
       display: flex;
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
+      overflow: hidden;
     }
   
     .product-ps,
