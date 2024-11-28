@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamecon</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER STRUCTURE -->
+
+<header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="#"><img src="./Images/logo.png" alt=""></a>
+        </div>
+
+        <div class="search-bar">
+            <form action="">
+                <input type="text" id="search_bar" name="search-bar" placeholder="Pesquisar">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+  
+        <div class="shoppingcart">
+            <img src="./Images/carshop.png" alt="">
+            <a href="#cart" onclick="openCart()"><h3>(0)</h3></a>
+        </div>
+
+        <div class="login-button">
+            <button><a href="./index.html">Login</a></button>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./images/menu_white_36dp.svg" alt=""></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="#biography" class="nav-link">SOBRE MIM</a></li>
+            <li class="nav-item"><a href="./contacts.html" class="nav-link">Contato</a></li>
+            <li class="nav-item"><a href="./works.html" class="nav-link">Trabalhos</a></li>
+        </ul>
+    </div>    
+</header>
+
+<!-- SECTION 1 -->
+ <section id="section_1">
+    <div class="container_consoles">
+        <div class="console_options">
+            <form action="">
+                <select id="videogame_playstation" name="videogame_playstation">
+                  <option value="">Playstation</option>
+                  <option value="consoles_ps5">Consoles PS5</option>
+                  <option value="consoles_ps4">Consoles PS4</option>
+                  <option value="consoles_ps3">Consoles PS3</option>
+                  <option value="acessórios_ps4">Acessóios</option>
+                  <option value="jogos_playstation">Jogos</option>
+                </select>
+                <br/>
+                <select id="videogame_xbox" name="videogame_xbox">
+                    <option value="">Xbox</option>
+                  <option value="consoles_xbox_serires">Consoles Xbox Serie X|S</option>
+                  <option value="consoles_xbox_one">Consoles Xbos One</option>
+                  <option value="consoles_xbox_360">Consoles Xbox 360</option>
+                  <option value="acessórios_xbox">Acessóios</option>
+                  <option value="jogos_xbox">Jogos</option>
+                </select>
+                <br/>
+                <select id="videogame_nintendo" name="videogame_nintendo">
+                    <option value="">Nintendo</option>
+                  <option value="consoles_nintendo">Consoles Nintendo</option>
+                  <option value="acessórios_nintendo">Acessóios</option>
+                  <option value="jogos_nintendo">Jogos</option>
+                </select>
+            </form>
+        </div>
+    </div>
+ </section>
+
+<!-- SECTION 2 -->
+<section id="section_2">
+    <div class="slider">
+        <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <!-- Slide Images -->
+             <div class="slide s1">
+                <img src="./Images/slide-1-ps.jpg" alt="imagem da playstation">
+             </div>
+
+             <div class="slide">
+                <img src="./Images/slide-2-xbox.jpg" alt="imagem da xbox">
+             </div>
+
+             <div class="slide">
+                <img src="./Images/slide-3-nintendo.jpg" alt="imagem da nintendo">
+             </div>
+
+             <!-- Navigation Auto -->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECTION 3 -->
+ <section id="section_3">
+    <div class="container">
+        <div class="games_link">
+            <div class="link-game">
+                <a href="#section_4"><img src="./Images/playstation_logo.png" alt=""></a>
+                <h1>JOGOS PLAYSTATION</h1>
+            </div>
+
+            <div class="link-game">
+                <a href="#section_5"><img src="./Images/Xbox_one_logo.png" alt=""></a>
+                <h1>JOGOS XBOX</h1>
+            </div>
+
+            <div class="link-game">
+                <a href="#section_6"><img src="./Images/nintendo_logo.png" alt=""></a>
+                <h1>JOGOS NINTENDO</h1>
+            </div>
+        </div>
+    </div>
+ </section>
+
+ <!-- SECTION 4 - PLAYSTATION GAMES -->
+ <section id="section_4">
+
+    <h2>Playstation</h2>
+    <div class="container">
+        
+    <main>
+        <div class="slider-games-ps">
+
+           <div class="product-ps">
+                <div class="image">
+                    <img src="https://m.media-amazon.com/images/I/8136lnf0n2L._AC_SL1500_.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>God Of War - PS5</h3></div>
+
+                    <div class="price">R$ 250,00</div>
+ 
+                    <button class="addToCart" onclick="addItemToCart({name: 'God Of War - PS5', price: 'R$ 250,00', image: 'https://m.media-amazon.com/images/I/8136lnf0n2L._AC_SL1500_.jpg'});" data-image="https://m.media-amazon.com/images/I/8136lnf0n2L._AC_SL1500_.jpg">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-ps">
+                <div class="image">
+                    <img src="https://acdn.mitiendanube.com/stores/002/670/436/products/ea-sports-fc-fifa-25-edicao-standard-para-ps5-capa-04f38c5116169fd70c17213337389337-1024-1024.webp" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>EA SPORTS FC FIFA 25 - PS5</h3></div>
+
+                    <div class="price">R$ 250,00</div>
+
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-ps">
+                <div class="image">
+                    <img src="https://d5gag3xtge2og.cloudfront.net/producao/34149937/G/modern_warfare_3.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Call Of Dutty Modern Warfare III - PS5</h3></div>
+
+                    <div class="price">R$ 300,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-ps">
+                <div class="image">
+                    <img src="https://images-americanas.b2w.io/produtos/01/00/img/5264110/3/5264110326_1GG.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>The Last Of Us Part I - PS5</h3></div>
+
+                    <div class="price">R$ 300,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-ps">
+                <div class="image">
+                    <img src="https://a-static.mlcdn.com.br/800x560/jogo-demons-souls-remake-standard-edition-playstation-5-midia-fisica-sony/inpower4/4381/17dd5e69c0e1869055fd168b7a74aff5.jpeg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Demon's Souls - PS5</h3></div>
+
+                    <div class="price">R$ 230,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-ps">
+                <div class="image">
+                    <img src="https://i.zst.com.br/thumbs/12/35/28/1644091759.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Returnal - PS5</h3></div>
+
+                    <div class="price">R$ 150,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div> 
+            
+            <div class="product-ps">
+                <div class="image">
+                    <img src="https://images9.kabum.com.br/produtos/fotos/sync_mirakl/239289/Jogo-Death-Stranding-Director-S-Cut-Ps5-Kojima-Productions_1724125460_gg.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Death Stranding - PS5</h3></div>
+
+                    <div class="price">R$ 150,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+                
+            </div>
+            
+            <div class="product-ps">
+                <div class="image">
+                    <img src="https://cdn.awsli.com.br/1417/1417526/produto/57011928/ac4bb8cd59.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Ratchet & Clank Rift Apart - PS5</h3></div>
+
+                    <div class="price">R$ 300,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+                
+            </div>  
+
+            <div class="arrow">
+
+                <button class="left" onclick="leftPs()"><</button>
+
+                <button class="right" onclick="rightPs()">></button>
+
+            </div>
+
+        </div>
+    </main>
+    </div>
+ </section>
+
+ <!-- SECTION 5 - XBOX GAMES -->
+ <section id="section_5">
+
+    <h2>Xbox One|Series </h2>
+    <div class="container">
+        
+    <main>
+        <div class="slider-games-xbox">
+
+           <div class="product-xbox">
+                <div class="image">
+                    <img src="https://images1.kabum.com.br/produtos/fotos/sync_mirakl/273501/Forza-Horizon-5-para-Xbox-One-e-Xbox-Series-X-Microsoft_1689295718_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Forza Horizon 5</h3></div>
+
+                    <div class="price">R$ 180,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-xbox">
+                <div class="image">
+                    <img src="https://images3.kabum.com.br/produtos/fotos/sync_mirakl/295203/Jogo-Gears-5-Xbox-One-Microsoft-6ER-00004_1689295717_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Gears Of War 5</h3></div>
+
+                    <div class="price">R$ 170,00</div>
+
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-xbox">
+                <div class="image">
+                    <img src="https://images9.kabum.com.br/produtos/fotos/sync_mirakl/192889/Jogo-Star-Wars-Jedi-Fallen-Order-Xbox-One_1712702286_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Star Wars Jedi Falles Order</h3></div>
+
+                    <div class="price">R$ 150,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-xbox">
+                <div class="image">
+                    <img src="https://images5.kabum.com.br/produtos/fotos/sync_mirakl/201575/Jogo-Resident-Evil-4-Remastered-Xbox-One_1689295717_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Resident Evil 4</h3></div>
+
+                    <div class="price">R$ 130,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-xbox">
+                <div class="image">
+                    <img src="https://images3.kabum.com.br/produtos/fotos/sync_mirakl/272103/Assassin-S-Creed-Syndicate-Xbox-One_1724251556_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Assasins Creed Syndicate</h3></div>
+
+                    <div class="price">R$ 90,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-xbox">
+                <div class="image">
+                    <img src="https://images2.kabum.com.br/produtos/fotos/sync_mirakl/275082/Jogo-Battlefield-2042-Para-Xbox-One-e-Xbox-Series-X-Electronic-Arts_1702908490_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Battlefield 2042</h3></div>
+
+                    <div class="price">R$ 100,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div> 
+            
+            <div class="product-xbox">
+                <div class="image">
+                    <img src="https://images0.kabum.com.br/produtos/fotos/sync_mirakl/167890/Red-Dead-Redemption-II-para-Xbox-One-Rockstar-Games_1724075509_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Red Dead Redemption 2</h3></div>
+
+                    <div class="price">R$ 180,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+                
+            </div>
+            
+            <div class="product-xbox">
+                <div class="image">
+                    <img src="https://images8.kabum.com.br/produtos/fotos/sync_mirakl/256128/Jogo-It-Takes-Two-Xbox_1689295718_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>It Takes Two</h3></div>
+
+                    <div class="price">R$ 200,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+                
+            </div>  
+
+            <div class="arrow">
+
+                <button class="left" onclick="leftXbox()"><</button>
+
+                <button class="right" onclick="rightXbox()">></button>
+
+            </div>
+
+        </div>
+    </main>
+    </div>
+ </section> 
+
+ <!-- SECTION 6 - NINTENDO GAMES -->
+ <section id="section_6">
+
+    <h2>Nintendo</h2>
+    <div class="container">
+        
+    <main>
+        <div class="slider-games-nintendo">
+
+           <div class="product-nintendo">
+                <div class="image">
+                    <img src="https://images6.kabum.com.br/produtos/fotos/sync_mirakl/524506/Jogo-The-Legend-Of-Zelda-Tears-Of-The-Kingdom-Nintendo-Switch_1723493108_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>The Legend Of Zelda Tears Of The Kingdom</h3></div>
+
+                    <div class="price">R$ 410,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-nintendo">
+                <div class="image">
+                    <img src="https://images8.kabum.com.br/produtos/fotos/sync_mirakl/410118/Jogo-Mario-Kart-8-Deluxe-Nintendo-Switch_1714660966_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Mario Kart Deluxe 8</h3></div>
+
+                    <div class="price">R$ 313,00</div>
+
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-nintendo">
+                <div class="image">
+                    <img src="https://images5.kabum.com.br/produtos/fotos/sync_mirakl/209795/Jogo-Super-Mario-Odyssey-Switch_1714669412_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Super Mario Odyssey</h3></div>
+
+                    <div class="price">R$ 350,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-nintendo">
+                <div class="image">
+                    <img src="https://images0.kabum.com.br/produtos/fotos/sync_mirakl/395430/Jogo-Pok-mon-Sword-Nintendo-Switch_1714664718_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Pokemon Sword & Shield - Sword</h3></div>
+
+                    <div class="price">R$ 300,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-nintendo">
+                <div class="image">
+                    <img src="https://images3.kabum.com.br/produtos/fotos/sync_mirakl/148373/Game-Super-Smash-Bros-Ultimate-Switch_1700270893_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Super Smash Bros Ultimate</h3></div>
+
+                    <div class="price">R$ 320,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-nintendo">
+                <div class="image">
+                    <img src="https://images2.kabum.com.br/produtos/fotos/sync_mirakl/193282/Jogo-Super-Mario-Maker-2-Nintendo-Switch_1714669415_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Super Mario Maker 2</h3></div>
+
+                    <div class="price">R$ 300,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+
+            </div> 
+            
+            <div class="product-nintendo">
+                <div class="image">
+                    <img src="https://images4.kabum.com.br/produtos/fotos/sync_mirakl/579514/Splatoon-3-Nintendo-Switch-M-dia-F-sica_1714735178_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>Splatoon 3</h3></div>
+
+                    <div class="price">R$ 295,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+                
+            </div>
+            
+            <div class="product-nintendo">
+                <div class="image">
+                    <img src="https://images2.kabum.com.br/produtos/fotos/sync_mirakl/197272/Jogo-Nintendo-The-Legend-Of-Zelda-Breath-Of-The-Wild-Nintendo-Switch_1717689555_g.jpg" alt="">
+                </div>
+
+                <div class="information">
+
+                    <div class="title"><h3>The Legend Of Zelda Breath Of The Wild</h3></div>
+
+                    <div class="price">R$ 300,00</div>
+ 
+                    <button class="addToCart">Adicionar ao Carrinho</button>
+
+                </div>
+                
+            </div>  
+
+            <div class="arrow">
+
+                <button class="left" onclick="leftNintendo()"><</button>
+
+                <button class="right" onclick="rightNintendo()">></button>
+
+            </div>
+
+        </div>
+    </main>
+    </div>
+ </section> 
+
+<!-- SECÃO DE TESTE DO CARRNHO DE COMPRAS -->
+<section id="cart">
+    <h2>Carrinho de Compras</h2>
+    <div class="cart-container">
+        <div id="cart-items">
+            <!-- Os itens serão adicionados aqui dinamicamente -->
+        </div>
+        <div id="cart-total">
+            <p>Total: <span id="total-price">R$ 0,00</span></p>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+</section>
+
+<!-- Seção do Carrinho (Modal) -->
+
+<!-- FOOTER -->
+ 
+<footer class="fixarRodape">
+    
+    <div class="container">
+        <div class="contact-methods">
+            <div>
+                <h2>Contato</h3>
+                <h3>TEL | 11 3709-0998</h3>
+                <h3>CEL | 11 97876-6588</h3>
+                <h3>E-MAIL | gamecon@contato.com</h3>
+            </div>
+
+            <div class="social-links">
+                <h3>Minhas Redes</h3>
+                <ul>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="./images/instagram.png" alt="logo instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="localization">
+                <h2>Rua Viaduto dos Games, 777 - Jardim dos Controles </h2>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="./app.js"></script>
+
+</body>
+</html>

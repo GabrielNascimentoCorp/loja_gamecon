@@ -1,0 +1,78 @@
+
+<!--  modal teste java -->
+
+// modal teste 
+
+// Função para abrir o carrinho (modal)
+function openCart() {
+    document.getElementById("cart-modal").style.display = "flex";
+}
+
+// Função para fechar o carrinho (modal)
+function closeCart() {
+    document.getElementById("cart-modal").style.display = "none";
+}
+
+// Função para adicionar itens ao carrinho
+// Supondo que você tenha uma lógica para adicionar itens ao carrinho
+let cartItems = [];
+const cartCountElement = document.querySelector('.shoppingcart h3');
+
+function addItemToCart(item) {
+    cartItems.push(item);
+    updateCartDisplay();
+}
+
+// Atualiza o número de itens no carrinho e o total
+function updateCartDisplay() {
+    cartCountElement.innerText = `(${cartItems.length})`; // Atualiza a quantidade de itens
+    updateCartItems();
+    updateTotalPrice();
+}
+
+// Exibe os itens do carrinho
+function updateCartItems() {
+    const cartItemsContainer = document.getElementById("cart-items");
+    cartItemsContainer.innerHTML = ""; // Limpa os itens
+
+    cartItems.forEach(item => {
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("cart-item");
+        itemDiv.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <div class="item-info">
+                <h3>${item.name}</h3>
+                <div class="price">${item.price}</div>
+            </div>
+        `;
+        cartItemsContainer.appendChild(itemDiv);
+    });
+}
+
+// Atualiza o preço total
+function updateTotalPrice() {
+    let totalPrice = cartItems.reduce((total, item) => total + parseFloat(item.price.replace('R$ ', '').replace(',', '.')), 0);
+    document.getElementById("total-price").innerText = `R$ ${totalPrice.toFixed(2).replace('.', ',')}`;
+} 
+
+
+<!--  modal teste html  -->
+
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <span class="close-btn" onclick="closeCart()">&times;</span>
+        <h2>Carrinho de Compras</h2>
+        <div class="cart-container">
+            <div id="cart-items">
+                <!-- Os itens serão adicionados aqui dinamicamente -->
+            </div>
+            <div id="cart-total">
+                <p>Total: <span id="total-price">R$ 0,00</span></p>
+                <button id="checkout">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal teste css -->
+ 

@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(69, 11, 98);
+}
+
+.logo img {
+    height: 100px;
+    width: 120px;
+}
+
+.shoppingcart {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.shoppingcart img {
+    height: 50px;
+}
+
+.shoppingcart h3 {
+    font-size: 30px;
+    color: #000000;
+}
+
+.shoppingcart a {
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  button[type="submit"] {
+  background-color: #000000; /* Cinza escuro */
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  padding: 15px 20px;
+  color: white;
+  font-weight: bold;
+  }
+
+  button[type="submit"]:hover {
+    background-color: white;
+    color: #000000;
+    transition: 0.3s;
+  }
+
+  .nav-bar .login-button button:hover {
+    background-color: white;
+    color: #000000;
+    transition: 0.3s;
+  }
+
+  .nav-bar .login-button button :hover {
+    color: #000000;
+    transition: 0.3s;
+  }
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a h1 {
+    font-size: 54px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul  {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 130px;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.login-button button {
+    border: none;
+    background-color: #000000;
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.console_options, form, select {
+    gap: 20px;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slider {
+    margin: 0 auto;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 110%;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    align-items: center;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 100px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+/* Container Configuration */
+
+.container, h2 {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.games_link {
+    display: flex;
+    gap: 150px;
+}
+
+.link-game {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.link-game h1 {
+    margin-top: 40px;
+    font-size: 19px;
+}
+
+.link-game a img {
+    height: 100px;
+}
+
+#section_3 {
+    font-size: 16px;
+}
+
+form #videogame_playstation, #videogame_xbox, #videogame_nintendo{
+    padding: 10px 20px;
+}
+
+form #videogame_playstation:hover {
+    background-color: blue;
+    color: white;
+    transition: 0.3s;
+}
+
+form #videogame_xbox:hover {
+    background-color: rgb(0, 111, 15);
+    color: white;
+    transition: 0.3s;
+}
+
+form #videogame_nintendo:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transition: 0.3s;
+}
+
+#search_bar {
+    width: 500px;
+}
+
+
+/*  SLIDER PLAYSTATION GAMES */
+
+#section_4 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#section_4 h2 {
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.slider-games-ps {
+    width: 1250px;
+    overflow: hidden;
+    display: flex;
+    padding: 30px 10px;
+    position: relative;
+}
+
+.slider-games-ps .product-ps {
+    width: 400px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+
+.slider-games-ps .product-ps img {
+    width: 300px;
+    height: 300px;
+}
+
+.slider-games-ps .product-ps .information {
+    padding: 20px 30px;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+.slider-games-ps .product-ps .information button{
+    margin-top: 15px;
+    width: 100%;
+    background: blue;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider-games-ps .product-ps .price {
+    margin-top: 10px;
+    font: 20px;
+}
+
+.slider-games-ps .arrow {
+    width: 1240px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: 40%;
+}
+
+.slider-games-ps .arrow button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: rgba(97, 97, 97, 0.731);
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.slider-games-ps .information button:hover {
+    box-shadow: 5px 5px 5px rgba(45, 44, 44, 0.3);
+}
+
+/* SLIDER XBOX GAMER */
+
+#section_5 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+#section_5 h2 {
+    color: green;
+    margin-bottom: 20px ;
+
+}
+
+#section_5 .product-xbox button {
+    background-color: green;
+}
+
+.slider-games-xbox {
+    width: 1250px;
+    overflow: hidden;
+    display: flex;
+    padding: 30px 10px;
+    position: relative;
+}
+
+.slider-games-xbox .product-xbox {
+    width: 400px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+
+.slider-games-xbox .product-xbox img {
+    width: 300px;
+    height: 300px;
+}
+
+.slider-games-xbox .product-xbox .information {
+    padding: 20px 30px;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+.slider-games-xbox .product-xbox .information button{
+    margin-top: 15px;
+    width: 100%;
+    background: blue;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider-games-xbox .product-xbox .price {
+    margin-top: 10px;
+    font: 20px;
+}
+
+.slider-games-xbox .arrow {
+    width: 1240px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: 40%;
+}
+
+.slider-games-xbox .arrow button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: rgba(97, 97, 97, 0.731);
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.slider-games-xbox .product-xbox .information button {
+    background-color: aliceblue;
+}
+
+.slider-games-xbox .information button:hover {
+    box-shadow: 5px 5px 5px rgba(45, 44, 44, 0.3);
+}
+
+/* SLIDER NINTENDO GAMES */
+
+#section_6 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+#section_6 h2 {
+    color: rgb(255, 0, 0);
+    margin-bottom: 20px ;
+
+}
+
+#section_6 .product-nintendo button {
+    background-color: rgb(255, 0, 0);
+}
+
+.slider-games-nintendo {
+    width: 1250px;
+    overflow: hidden;
+    display: flex;
+    padding: 30px 10px;
+    position: relative;
+}
+
+.slider-games-nintendo .product-nintendo {
+    width: 400px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+
+.slider-games-nintendo .product-nintendo img {
+    width: 300px;
+    height: 300px;
+}
+
+.slider-games-nintendo .product-nintendo .information {
+    padding: 20px 30px;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+.slider-games-nintendo .product-nintendo .information button{
+    margin-top: 15px;
+    width: 100%;
+    background: blue;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider-games-nintendo .product-nintendo .price {
+    margin-top: 10px;
+    font: 20px;
+}
+
+.slider-games-nintendo .arrow {
+    width: 1240px;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: 40%;
+}
+
+.slider-games-nintendo .arrow button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: rgba(97, 97, 97, 0.731);
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.slider-games-nintendo .information button:hover {
+    box-shadow: 5px 5px 5px rgba(45, 44, 44, 0.3);
+}
+
+/* FOOTER */ 
+
+.fixarRodape {
+    bottom: 0;
+    position:relative;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(254, 254, 254);
+    padding: 10px 30PX;
+}
+
+.social-links img {
+    height:35px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.contact-methods h3, h2 {
+    margin-bottom: 20px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th   
+ {
+    background-color: #f2f2f2;
+}
+
+#total {
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+
+/* teste */ 
+
+#cart {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#cart-items {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item .item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item .item-info h3 {
+    margin: 0;
+}
+
+.cart-item .item-info .price {
+    margin: 5px 0;
+}
+
+.cart-item input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+#cart-total {
+    font-size: 18px;
+}
+
+#checkout {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#checkout:hover {
+    background-color: #218838;
+}
+
+
