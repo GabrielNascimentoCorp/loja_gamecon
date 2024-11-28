@@ -1,6 +1,11 @@
 /* Pequenas telas (celulares) */
 @media screen and (max-width: 768px) {
 
+    *{
+        overflow: hidden;
+    }
+
+
     /* Header */
     .nav-bar {
       flex-direction: column;
